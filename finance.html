@@ -36,50 +36,6 @@
         </div>
     </section>
 
-    <section id="financial-risk" class="product-detail">
-        <div class="container">
-            <div class="product-header">
-                <h2>智衍财务风险预警系统</h2>
-                <p>基于AI的财务风险智能识别与预警</p>
-            </div>
-            <div class="product-overview">
-                <div class="product-image">
-                    <img src="images/tmp.png" alt="智衍财务风险预警系统">
-                </div>
-                <div class="product-description">
-                    <h3>产品概述</h3>
-                    <p>智衍财务风险预警系统基于立信百年财务经验和大数据分析技术，实现对企业财务风险的智能识别与预警。系统通过对企业财务数据的实时监控和分析，结合行业标准和历史数据，识别潜在的财务风险，并提供风险预警和改进建议。</p>
-                    
-                    <h3>核心功能</h3>
-                    <div class="product-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>财务异常自动识别</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>风险预警及时推送</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>风险成因智能分析</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>改进建议自动生成</span>
-                        </div>
-                    </div>
-                    
-                    <div class="product-actions">
-                        <a href="#" class="btn btn-primary" onclick="showDemoRequest('智衍财务风险预警系统')">申请演示</a>
-                        <a href="#" class="btn btn-outline" onclick="showVPNInfo()">试用系统</a>
-                        <a href="#" class="btn btn-secondary">下载产品说明书</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="financial-analysis" class="product-detail">
         <div class="container">
             <div class="product-header">
@@ -107,7 +63,16 @@
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                        <span>同行业对标分析</span>
+                            <span>同行业对标分析</span>
+                        </div>
+                    </div>
+                    
+                    <h3>成功案例</h3>
+                    <div class="partner-cases">
+                        <div class="case-item">
+                            <h4>某大型制造企业财务分析升级项目</h4>
+                            <p>通过智衍财务分析平台，帮助客户实现了从传统报表分析向多维度实时分析的转变，建立了完整的财务指标体系。</p>
+                            <p><strong>项目成效：</strong> 分析效率提升300%，异常预警准确率达95%，管理决策时效提升60%</p>
                         </div>
                     </div>
                     
@@ -158,6 +123,15 @@
                         </div>
                     </div>
                     
+                    <h3>成功案例</h3>
+                    <div class="partner-cases">
+                        <div class="case-item">
+                            <h4>某上市公司投融资决策优化项目</h4>
+                            <p>利用智衍财务决策支持系统，为客户提供了全面的投融资分析和建议，帮助企业优化资金配置和融资结构。</p>
+                            <p><strong>项目成效：</strong> 融资成本降低15%，投资收益率提升20%，决策周期缩短50%</p>
+                        </div>
+                    </div>
+                    
                     <div class="product-actions">
                         <a href="#" class="btn btn-primary" onclick="showDemoRequest('智衍财务决策支持系统')">申请演示</a>
                         <a href="#" class="btn btn-outline" onclick="showVPNInfo()">试用系统</a>
@@ -171,7 +145,7 @@
     <footer>
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2025 立信管理咨询数智化创新部门. 版权所有.</p>
+                <p>&copy; 2025 立信管理咨询数智化创新部门。版权所有。</p>
             </div>
         </div>
     </footer>
@@ -212,24 +186,52 @@
         </div>
     </div>
 
+    <!-- VPN信息模态框 -->
     <div id="vpnInfoModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>系统访问说明</h2>
-            <p>为保障数据安全，我们的系统需要通过VPN访问。请按照以下步骤进行操作：</p>
-            <ol>
-                <li>下载并安装我们提供的VPN客户端</li>
-                <li>使用我们提供的账号密码登录VPN</li>
-                <li>连接成功后，通过系统URL访问</li>
-                <li>如有问题，请联系技术支持：021-12345678</li>
-            </ol>
-            <div class="modal-buttons">
-                <a href="#" class="btn btn-primary">下载VPN客户端</a>
-                <button class="btn btn-outline" onclick="closeModal()">关闭</button>
-            </div>
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>系统试用信息</h2>
+        <p>请使用以下VPN信息连接到我们的演示环境：</p>
+        <div class="vpn-info">
+            <p><strong>服务器地址：</strong> vpn.bdodigital.com.cn</p>
+            <p><strong>用户名：</strong> demo</p>
+            <p><strong>密码：</strong> BDOdemo2025</p>
+            <p><strong>说明：</strong> 连接后请访问 http://portal.bdodigital.local 进入产品演示门户</p>
         </div>
     </div>
+    </div>
 
-    <script src="scripts.js"></script>
-</body>
-</html>
+    <script>
+    // 显示申请演示模态框
+    function showDemoRequest(productName) {
+        document.getElementById('modalProductName').textContent = "产品名称：" + productName;
+        document.getElementById('demoRequestModal').style.display = 'block';
+    }
+
+    // 显示VPN信息模态框
+    function showVPNInfo() {
+        document.getElementById('vpnInfoModal').style.display = 'block';
+    }
+
+    // 关闭模态框
+    function closeModal() {
+        document.getElementById('demoRequestModal').style.display = 'none';
+        document.getElementById('vpnInfoModal').style.display = 'none';
+    }
+
+    // 点击模态框外部关闭
+    window.onclick = function(event) {
+        if (event.target.className === 'modal') {
+            event.target.style.display = 'none';
+        }
+    }
+
+    // 提交演示申请表单
+    document.getElementById('demoRequestForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('您的演示申请已提交，我们的顾问将在1-2个工作日内与您联系！');
+        closeModal();
+    });
+    </script>
+    </body>
+    </html>
